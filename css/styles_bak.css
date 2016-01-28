@@ -1,0 +1,57 @@
+/* Main Style Sheet - 746wattz */
+h1,h2,h3,h4,h5,p,b{
+    cursor: context-menu;
+}
+html, body, .row-fill{
+	height:100%;
+}
+
+.menu-bar{
+	background: #2980b9;
+	margin-bottom: 0 !important;
+	border: 0;
+    border-radius: 0;
+}
+
+.fill{
+	height:calc(100% - 50px);
+}
+
+.sidebar-right, .sidebar-left{
+	background: #354b60;
+	height:100%;
+}
+
+.main-center{
+	height:100%;
+	background: #E4F1FE;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #A2C9EA;
+}
+
+.btn-primary:hover {
+    border-color: #A2C9EA;
+}
+
+.col-centered{
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+}
+.div-btn-grp{
+	text-align: -webkit-center;
+}
+
+[ng-drag].dragging {
+  position: relative;
+}

@@ -1,0 +1,119 @@
+/* Main Style Sheet - 746wattz */
+h1,h2,h3,h4,h5,p,b{
+    cursor: context-menu;
+}
+html, body, .row-fill{
+	height:100%;
+}
+
+.menu-bar{
+	background: #2980b9;
+	margin-bottom: 0 !important;
+	border: 0;
+    border-radius: 0;
+}
+
+.fill{
+	height:calc(~"100% - 50px");
+}
+
+.sidebar-right, .sidebar-left{
+	background: #354b60;
+	height:100%;
+}
+
+.main-center{
+	height:100%;
+	background: #E4F1FE;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #A2C9EA;
+}
+
+.btn-primary:hover {
+    border-color: #A2C9EA;
+}
+
+.col-centered{
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+}
+.div-btn-grp{
+	text-align: -webkit-center;
+}
+.menuwrap{
+    margin-top: 20px;
+    height:calc(~"100% - 30px");
+    overflow-y: auto;
+}
+
+.menuwrap::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    border-color:#354b60;
+    background-color: #354b60;
+}
+
+.menuwrap::-webkit-scrollbar
+{
+    width: 8px;
+    background-color: #354b60;
+}
+
+.menuwrap::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    border-color:#354b60;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: rgb(34, 49, 63);
+}
+
+
+.draggable-objects{
+    // list-style: none;
+    padding-left: 5px;
+    margin-right: 12px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    >div.menuitem {
+        margin-top: 10px;
+        cursor: pointer;
+        //position: relative;
+        //background-image: url('http://placehold.it/100x50');
+        background: #6C7A89;
+        width: 100%;
+        height: 50px;
+        background-repeat: no-repeat;
+        color:white;
+        text-align: -webkit-center;
+        padding-top: 15px;
+         -webkit-transform: translate3d(0, 0, 0); /* fix spinner */
+        -webkit-column-break-inside: avoid; /* fix columns */
+    }
+    >div:first-child{
+        margin-top: 4px;
+    }
+    >div:nth-child(14){
+        margin-top: 4px;
+    }
+}
+
+[ng-drag].dragging {
+  position: relative;
+}
+
+.menuitem .dragging {
+  position: relative;
+}
